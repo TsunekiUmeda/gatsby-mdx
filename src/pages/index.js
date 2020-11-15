@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
 import SEO from '../components/SEO'
-// ...GatsbyImageSharpFluid
+
 const IndexPage = ({ data }) => {
   const {
     allMdx: { nodes: posts },
@@ -26,8 +26,9 @@ export const query = graphql`
           title
           author
           category
-          date(formatString: "MMMM,Do,YYYY")
+          date(formatString: "MMMM Do, YYYY")
           slug
+          readTime
           image {
             childImageSharp {
               fluid {
