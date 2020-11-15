@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const Post = () => {
-  return <Wrapper>Post Component</Wrapper>
+  return <Wrapper>Post Component test</Wrapper>
 }
 
 const Wrapper = styled.article`
