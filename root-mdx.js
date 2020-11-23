@@ -2,7 +2,10 @@ import React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 
 const components = {
-  //logic
+  h2: props => {
+    console.log(props)
+    return <h2 {...props}>{props.children}</h2>
+  },
 }
 
 export const wrapMDX = ({ element }) => {
